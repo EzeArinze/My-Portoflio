@@ -33,4 +33,11 @@ export const Ptag = styled.p`
       font-size: 1.6rem;
       font-weight: 300;
     `}
+
+    ${(props) =>
+    props.as === "p-4" &&
+    css`
+      font-size: 1.3rem;
+      font-weight: 300;
+    `}
 `;
