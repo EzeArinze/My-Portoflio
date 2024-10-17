@@ -31,11 +31,12 @@ function UseDarkModeContext({ children }) {
   );
 }
 
-const useDarkMode = () => {
+// eslint-disable-next-line react-refresh/only-export-components
+export const useDarkMode = () => {
   const context = useContext(DarkMode);
   if (context === undefined)
     throw new Error("used context outside of it's scope ");
   return context;
 };
 
-export { UseDarkModeContext, useDarkMode };
+export { UseDarkModeContext };
