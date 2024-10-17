@@ -42,8 +42,6 @@ function App() {
                 fontSize: "16px",
                 maxHeight: "500px",
                 padding: "16px 24px",
-                backgroundColor: "",
-                color: "",
               },
             }}
           />

@@ -2,19 +2,40 @@ import styled from "styled-components";
 import { Button } from "../ui/Button";
 import { Form, Input, Label, TextArea } from "../ui/Form";
 import toast from "react-hot-toast";
+import axios from "axios";
+import { useState } from "react";
 
 const BtnDiv = styled.div`
   text-align: end;
 `;
 
 function ContactForm() {
-  function handleSubmit(e) {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const apiKey = import.meta.env.VITE_API_KEY;
+
+  async function handleSubmit(e) {
     e.preventDefault();
 
     const formData = new FormData(e.target);
-    const formValues = Object.fromEntries(formData);
-    console.log(formValues);
-    toast.success("submitted succefully");
+    formData.append("access_key", apiKey);
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    setIsLoading((prev) => !prev);
+    const res = await axios.post("https://api.web3forms.com/submit", json, {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    });
+
+    if (res.data.success) {
+      toast.success("submitted successfully");
+      e.target.reset();
+      setIsLoading(false);
+    }
   }
 
   return (
@@ -46,7 +67,9 @@ function ContactForm() {
       ></TextArea>
 
       <BtnDiv>
-        <Button>Send Email</Button>
+        <Button disabled={isLoading}>
+          {isLoading ? "Sending..." : "Send Email"}
+        </Button>
       </BtnDiv>
     </Form>
   );
