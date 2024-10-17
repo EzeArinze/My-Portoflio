@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Tools from "./components/Contact";
 import About from "./components/About";
 import ActiveSectionProvider from "./context/ActiveSectionProvider";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -26,6 +27,26 @@ function App() {
               </Route>
             </Routes>
           </BrowserRouter>
+          <Toaster
+            position="top-right"
+            gutter={12}
+            containerStyle={{ margin: "8px" }}
+            toastOptions={{
+              success: {
+                duration: 1500,
+              },
+              error: {
+                duration: 5000,
+              },
+              style: {
+                fontSize: "16px",
+                maxHeight: "500px",
+                padding: "16px 24px",
+                backgroundColor: "",
+                color: "",
+              },
+            }}
+          />
         </ActiveSectionProvider>
       </UseDarkModeContext>
     </>

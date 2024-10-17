@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "./NavBar";
 import styled from "styled-components";
+import Footer from "./Footer";
 
 const StyledLayout = styled.main`
   min-height: 100dvh;
@@ -36,6 +37,7 @@ function AppLayout() {
       <StyledMain>
         <Outlet />
       </StyledMain>
+      <Footer />
     </StyledLayout>
   );
 }
