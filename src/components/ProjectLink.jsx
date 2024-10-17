@@ -4,33 +4,12 @@ import { TbWorld } from "react-icons/tb";
 import styled from "styled-components";
 import { Tooltip } from "../ui/Tooltip";
 import { useDarkMode } from "../context/useDarkModeContext";
+import { Link } from "../ui/Link";
 
 const StyledLink = styled.div`
   display: flex;
   align-items: center;
   gap: 1.5rem;
-`;
-
-const Link = styled.a`
-  position: relative;
-
-  &:link,
-  &:visited {
-    text-decoration: none;
-  }
-
-  &:active,
-  &:hover {
-    transform: translateY(-2px);
-    transition: 0.3s;
-  }
-
-  &:hover span {
-    visibility: visible;
-    opacity: 1;
-    font-size: 1rem;
-    color: ${({ $isDarkMode }) => ($isDarkMode ? "#f5f5f5" : "")};
-  }
 `;
 
 function ProjectLink({ project }) {

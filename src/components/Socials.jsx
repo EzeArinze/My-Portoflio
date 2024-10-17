@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
 import { IoLogoInstagram } from "react-icons/io";
 import styled from "styled-components";
+import { Link } from "../ui/Link";
 
 const SocialIcons = styled.div`
   padding-top: 0.6rem;
@@ -22,9 +23,25 @@ function Socials() {
     <div>
       <Heading as="h4">Socials</Heading>
       <SocialIcons>
-        <FaGithub />
-        <CiTwitter />
-        <IoLogoInstagram />
+        <Link
+          href="https://github.com/EzeArinze"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </Link>
+
+        <Link
+          href="https://x.com/Emmanuelrinz2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <CiTwitter />
+        </Link>
+
+        <Link>
+          <IoLogoInstagram />
+        </Link>
       </SocialIcons>
     </div>
   );
