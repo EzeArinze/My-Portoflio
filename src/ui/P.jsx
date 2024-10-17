@@ -4,20 +4,34 @@ export const Ptag = styled.p`
   ${(props) =>
     props.as === "p-header" &&
     css`
+      width: 70%;
       font-size: 2rem;
       font-weight: 300;
       text-align: center;
+
+      @media (max-width: 570px) {
+        width: 90%;
+        font-size: 1.6rem;
+      }
     `}
   ${(props) =>
     props.as === "p-text" &&
     css`
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       text-align: center;
       width: 100%;
       line-height: 1.6;
 
-      @media (max-width: 576px) {
-        font-size: 1.8rem;
+      @media (max-width: 1560px) {
+        width: 60%;
+      }
+
+      @media (max-width: 998px) {
+        width: 90%;
+      }
+
+      @media (max-width: 721px) {
+        font-size: 1.4rem;
       }
     `}
 
@@ -32,6 +46,10 @@ export const Ptag = styled.p`
     css`
       font-size: 1.6rem;
       font-weight: 300;
+
+      @media (max-width: 721px) {
+        font-size: 1.4rem;
+      }
     `}
 
     ${(props) =>
@@ -40,4 +58,7 @@ export const Ptag = styled.p`
       font-size: 1.3rem;
       font-weight: 300;
     `}
+    @media (max-width: 544px) {
+    font-size: 1.2rem;
+  }
 `;

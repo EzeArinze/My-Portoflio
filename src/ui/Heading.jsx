@@ -10,6 +10,10 @@ const Heading = styled.h1`
         background-color: #f5f5f5;
         color: #595959;
       }
+
+      @media (max-width: 418px) {
+        font-size: 3rem;
+      }
     `}
 
   ${(props) =>
@@ -34,6 +38,10 @@ const Heading = styled.h1`
       font-weight: 600;
       text-align: left;
       text-transform: uppercase;
+
+      @media (max-width: 961px) {
+        font-size: 1.5rem;
+      }
     `}
 
     line-height:1.4;

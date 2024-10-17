@@ -44,9 +44,9 @@ function Contact() {
       <StyledContact>
         <Heading as={"h2"}>Contact</Heading>
         <span>&mdash;</span>
-        <Ptag as={"p-header"}>
-          Here you will find more information about me, what I do, and my
-          current skills mostly in terms of programming and technology
+        <Ptag as={"p-text"}>
+          Feel free to Contact me by submitting the form below and I will get
+          back to you as soon as possible
         </Ptag>
 
         <StyledCta $isDarkMode={isDarkMode}>

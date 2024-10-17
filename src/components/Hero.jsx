@@ -20,7 +20,7 @@ function Hero() {
         {" "}
         <span>Hey,</span> This is Nuel
       </Heading>
-      <Ptag as={"p-text"}>
+      <Ptag as={"p-header"}>
         A Result-Oriented Web Developer building and managing Websites and Web
         Applications that leads to the success of the overall product
       </Ptag>
