@@ -3,7 +3,7 @@ import { projects } from "../data/projects";
 import { StyledCard } from "../ui/StyledCard";
 import ProjectImg from "../ui/ProjectImg";
 import ProjectLink from "./ProjectLink";
-import { useDarkMode } from "../context/useDarkModeContext";
+import { useDarkMode } from "../context/DarkModeContext";
 
 const StyledWorks = styled.section`
   padding: 4rem 1.5rem; /* Add some padding */

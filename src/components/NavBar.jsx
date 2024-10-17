@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import DarkMode from "./DarkMode";
 import Avatar from "./Avatar";
 import Link from "./NavLink";
-import { useDarkMode } from "../context/useDarkModeContext";
+import { useDarkMode } from "../context/DarkModeContext";
 import Hamburger from "./Hamburger";
 import { NavLinks } from "../ui/NavLinks";
 

@@ -1,5 +1,5 @@
 import { HiOutlineMoon, HiOutlineSun } from "react-icons/hi2";
-import { useDarkMode } from "../context/useDarkModeContext";
+import { useDarkMode } from "../context/DarkModeContext";
 import styled from "styled-components";
 
 const StyledSection = styled.section`

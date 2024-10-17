@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import styled from "styled-components";
 import { Tooltip } from "../ui/Tooltip";
-import { useDarkMode } from "../context/useDarkModeContext";
+import { useDarkMode } from "../context/DarkModeContext";
 import { Link } from "../ui/Link";
 
 const StyledLink = styled.div`

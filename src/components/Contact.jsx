@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Heading from "../ui/Heading";
 import { Ptag } from "../ui/P";
 import ContactForm from "./ContactForm";
-import { useDarkMode } from "../context/useDarkModeContext";
+import { useDarkMode } from "../context/DarkModeContext";
 
 const StyledContact = styled.section`
   min-height: 95dvh;
