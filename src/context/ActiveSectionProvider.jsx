@@ -13,6 +13,7 @@ function ActiveSectionProvider({ children }) {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useActive() {
   const context = useContext(ActiveSection);
   if (context === undefined) throw new Error("used outside it's scope");
