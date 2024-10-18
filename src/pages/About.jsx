@@ -1,19 +1,20 @@
 import styled from "styled-components";
 import Heading from "../ui/Heading";
 import { Ptag } from "../ui/P";
-import AboutDescription from "./AboutDescription";
-import Skills from "./Skills";
+import AboutDescription from "../components/AboutDescription";
+import Skills from "../components/Skills";
 
 const StyledAbout = styled.section`
-  min-height: 95dvh;
+  /* min-height: 95dvh; */
 
-  padding: 8rem 0.8rem;
+  margin: 0 auto;
+  width: 80%;
+  padding: 6rem 0.8rem;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 0.2rem;
 
-  /* text-align: center;  */
+  gap: 0.2rem;
 
   span {
     font-weight: 600;
@@ -22,7 +23,7 @@ const StyledAbout = styled.section`
   }
 
   @media (max-width: 768px) {
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
   }
 
   @media (max-width: 576px) {
@@ -32,9 +33,9 @@ const StyledAbout = styled.section`
 
 const StyledDiv = styled.div`
   display: grid;
-  grid-template-columns: 60% 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  padding-top: 4rem;
+  padding-top: 2rem;
 
   @media (max-width: 1024px) {
     grid-template-columns: 1fr;

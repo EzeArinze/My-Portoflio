@@ -35,6 +35,10 @@ const Input = styled.input`
     border-color: #f2f2f2;
     outline: none;
   }
+
+  @media (max-width: 361px) {
+    padding: 1.2rem;
+  }
 `;
 
 const TextArea = styled.textarea`
@@ -50,6 +54,11 @@ const TextArea = styled.textarea`
   &:focus {
     border-color: #f2f2f2;
     outline: none;
+  }
+
+  @media (max-width: 361px) {
+    padding: 1.2rem;
+    height: 100px;
   }
 `;
 

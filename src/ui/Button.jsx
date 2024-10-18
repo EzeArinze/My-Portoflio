@@ -17,4 +17,9 @@ export const Button = styled.button`
     font-weight: 600;
     cursor: pointer;
   }
+
+  @media (max-width: 361px) {
+    padding: 0.4rem 1.4rem;
+    font-size: 1.1rem;
+  }
 `;

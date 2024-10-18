@@ -1,7 +1,7 @@
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Contact from "../components/Contact";
-import Project from "../components/Projects";
+import Hero from "./Hero";
+import About from "./About";
+import Contact from "./Contact";
+import Project from "./Projects";
 import useSpyAction from "../hooks/useSpyAction";
 
 function Home() {

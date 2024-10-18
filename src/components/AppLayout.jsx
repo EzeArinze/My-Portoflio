@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 const StyledLayout = styled.main`
   min-height: 100dvh;
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-rows: auto 1fr;
@@ -18,15 +18,11 @@ const StyledLayout = styled.main`
 `;
 
 const StyledMain = styled.section`
-  width: 90%;
+  /* width: 80%; */
   margin: 0 auto;
-  /* padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
 
   @media (min-width: 768px) {
-    padding: 2rem;
+    padding: 1rem;
   }
 `;
 

@@ -1,10 +1,10 @@
 import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import GlobalStyle from "./styles/GlobalSrtyles";
 import AppLayout from "./components/AppLayout";
-import Project from "./components/Projects";
+import Project from "./pages/Projects";
 import Home from "./pages/Home";
-import Tools from "./components/Contact";
-import About from "./components/About";
+import Tools from "./pages/Contact";
+import About from "./pages/About";
 import ActiveSectionProvider from "./context/ActiveSectionProvider";
 import { Toaster } from "react-hot-toast";
 
